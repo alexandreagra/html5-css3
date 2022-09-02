@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+
+        /*
+        Quando você atribui o parâmetro "maior que >", você indica o "child" da div, fazendo o parágrafo (como no exemplo) pertencer às configurações daquela div.
+        Div:hover > p - você continua tratando da div, em relação ao parágrafo escolhido. 
+        */
+        body{
+        font-family: Arial;
+        }
+
+        div > p {
+        display: none;    
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 50%;
+        }
+
+        div:hover {
+            color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+<h1>Exemplo de Hover</h1>   
+<p>Passe o mouse sobre o texto abaixo</p>
+<div> 
+    Passe o mouse aqui
+    <p>TEXTO ESCONDIDO...</p>
+</div> 
+<p>Fim do Exemplo</p>
+</body>
+</html>

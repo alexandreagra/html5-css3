@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*
+    Tudo que em HTML é id = em CSS é # (só pode ter um elemento)
+    Tudo que em HTML é class = em CSS é . (pode ter vários)
+
+    Utilizando a tag "<span>", você pode atribuir uma classe a um pedaço de texto, da seguinte forma: 
+    Lorem ipsun <span class="classequalquer"> dolor <span>;
+    O "dolor" vai obter características da classe escolhida.
+
+    Você também pode ter um "id" e um "class" no mesmo título/parágrafo, porém, o id sobrepõe-se ao class (a class vem antes, mas o id se soprepõe). 
+    */
+body{
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(4, 109, 0);
+}
+
+.marcados {
+    color: blue;
+}
+
+.destaque {
+    background-color: aquamarine;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: rgb(190, 6, 6);
+    color: white;
+    /* não há a necessidade de colocar como "h1#principal, basta colocar o principal com a hashtag de id */
+}
+
+h2{
+    color: rgb(51, 77, 49);
+}

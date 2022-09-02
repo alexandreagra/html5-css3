@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-models</title>
+    <style>
+        /* ANATOMIA DO BOX-MODEL
+        Border: são as bordas do elemento
+        Padding: espaço interno da "caixa" do elemento
+        Margin: a margem ou distância entre o elemento e os colaterais
+        outline: contorno ou traçado da borda (fora do elemento)
+
+        EXISTEM 2 TIPOS DE CAIXA:
+
+        BOX-LEVEL: Sempre se inicia em uma linha nova. Sempre ocupa o espaço inteiro da caixa (width = wiewport do html); 
+        Exemplos: 
+        "DIV", "<h1-6">, "<P>", "<main>", "<header>", "<nav>", "<article>", "<aside>", "<fotter>", "<form>", "<video>";
+
+        INLINE-LEVEL: desenha a caixa do tamanho do conteúdo do elemento, não quebra a linha, continuando o conteúdo "inline". 
+        Exemplos: 
+        "<SPAN>", "<a>", "<code>", "<small>", "<strong>", "<em>", "<sup>-<sub>", "<label>", "<button>", "<input>", "<select>";
+        */
+
+        h1{ /*BOX LEVEL - por padrão, tem o display "block", que é próprio para as caracteristicas de um box level*/
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            background-color: lightblue;
+
+            border: 10px solid darkslategrey;
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: crimson;
+
+            dá pra sintetizar tudo em 3 passos direto na linha, assim como em textos. 
+            */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* basta colocar padding: 10px, se todas as bordas forem do mesmo tamanho 
+            Se colocar 2 medidas, ele vai entender da seguinte forma:
+            padding 10px 20px (o de cima e baixo fica 10, lados fica 20)
+
+            Se todas forem diferentes, você pode colocar tudo "inline", seguindo a orientação horária de um relógio, exemplo:
+            padding: 10px 10px 10px 10px
+            */
+
+            
+
+            margin: auto;
+
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            Você também pode colocar inline ou 2 valores, igual o exemplo de padding acima.
+
+            O comando "auto" centraliza a margem.
+            Se você colocar "margin: 10px auto 10px auto", você pode selecionar margens de cima e baixo ao seu gosto, e centralizar o conteúdo pela orientação lateral.
+            */
+
+            outline-width: 5px;
+            outline-style: solid;
+            outline-color: darkgoldenrod;
+
+            /* Você também pode fazer como os exemplos acima, inline:
+            outline: 5px solid darkgoldenrod;
+            */
+        }
+        
+        a { /* INLINE LEVEL (IMPORTANTE: por ser inline, não pode ser configuradas altura e largura
+            Também é posível usar o "display: inline-block;" para poder utilizar propriedades de bloco*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(154, 85, 211);
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Exemplo de caixa box level</h1>    
+<p>Parágrafos também são exemplos de box level, mas os <a href='#'> links são exemplos de caixas INLINE-LEVEL</a> vamos ver como tudo isso funciona.</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+<h1>inserindo vídeos hospedados localmente</h1>   
+<p>Este vídeo está hospedado no meu próprio servidor</p>
+<!-- Essa é a forma mais simples de se colocar um vídeo no ar em um site, mas não exatamente mais adequada porque permite apenas um formato, que no caso foi o mp4. 
+<video src="Mídia/Meu-Vídeo-convertido.m4v" width="500" controls></video>-->
+
+<video width="500" poster="Imagens/Thumb-vídeo.png" controls autoplay loop>
+<source src="Mídia/Meu-Vídeo-convertido.m4v" type="video/mp4">
+<source src="Mídia/meu-vídeo-convertido.webm" type="video/webm">
+<p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+<!--O último parágrafo só aparecerá caso o navegador do usuário não carregue os vídeos-->
+
+<!-- MUITO IMPORTANTE
+
+Essa forma de hospedar vídeos em forma interna, pode gerar problemas com tráfego de dados muito alto, a depender do tamanho da mídia, o que gera um custo mais alto para o cliente. Quando utilizar a tag "video", deve ser informado essa questão DE TODA FORMA para o cliente.
+-->
+</video>
+<h1>Adicionando vídeos de hospedagem externa (Youtube)</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TpkDQHTRJRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h1>Inserindo videos a partir do vimeo (serviço de hospedagem excelente para empresas, com ótima qualidade e a vantagem de poder ser privado (só para assinantes, opção que o youtube não dá).</h1>
+<iframe src="https://player.vimeo.com/video/737031772?h=edbbfcb391" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/737031772">How Small!</a> from <a href="https://vimeo.com/charlenexu">Charlene Xu</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<!-- No entanto, a plataforma é muito mais pesada (talvez por ter melhor qualidade), dependendo da internet do usuário, vai ter dificuldade de visualizar-->
+</body>
+</html>

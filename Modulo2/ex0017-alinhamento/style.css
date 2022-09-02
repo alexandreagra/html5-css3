@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@import url('https://fonts.google.com/specimen/Work+Sans/about?query=work+sans');
+
+p{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 1em;
+}
+
+h1{
+    font-family: "Work Sans", sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    font-style: italic;
+/* shorthand font, abaixo:*/
+/* font-style -> font weight -> font-size -> font-family (TEM QUE SER NESSA ORDEM) como descrito abaixo:*/
+/* font: italic bolder 3em "Helvetica", sans-serif; 
+
+a forma acima é uma forma muito mais fácil, pratica e organizada de se determinar os atributos mais básicos de uma fonte*/
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    /* lighter - normal - bold - bolder */
+    /* Medidas Absolutas
+    cm, mm, in, px, pt, pc
+
+       Medidas Relativas
+    em, ex, rem, vw, vh, %
+
+       As medidas "px" e "em" 
+       são as recomendas pela 
+       w3c.
+       16px, geralmente é igual a "1em"
+       O "em" é o mais indicado pela facilidade de trabalhar em porcentagem (relativas ao px, dobrando de tamanho a cada "em") 
+
+       Weight: peso
+       width: largura
+       height: altura
+
+     */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+<h1>Imagem dinâmica</h1>   
+<p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="Imagens/Imagem-P.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="Imagens/Imagem-M.png" type="image/png">
+    <img src="Imagens/Imagem-G.png" alt="Imagem flexível">
+</picture>
+<h1>Reproduzindo Áudio</h1>
+<p>Vamos aprender a reproduzir áudios em HTML5</p>
+<!--<audio src="mídia/Happy Mistake - RKVC.mp3" controls autoplay></audio>.   
+Essa é uma das maneiras de fazer-->
+<!-- navegadores são compatíveis com MP3, WAV e OGG. O "autoplay" nem sempre funciona, a depender do navegador que o usuário estiver utilizando-->
+<audio preload="metadata" controls loop> <!-- controls serve pra aparecer um player de audio básico no site. Loop faz o audio começar novamente, assim que termina
+preload (como o arquivo será carregado) tipos:
+1- none: nada será carregado a princípio
+2- metadata: (carrega somente os bytes mais básicos)
+3- auto: carrega o que tiver-->
+<source src="mídia/guanacast-33.mp3" type="audio/mpeg">
+<source src="mídia/guanacast-33.mp3" type="audio/ogg">
+<source src="mídia/guanacast-33.mp3" type="audio/wav">
+<p>infelizmente o seu navegador não consegue reproduzir o áudio. <a href="mídia/guanacast-33.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+</audio>
+<!--Vídeos carregam no formato MP4, M4V, WEBM e OGV-->
+
+</body>
+</html>
