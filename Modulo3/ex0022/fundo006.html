@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BK size</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
+            background:  black url('imagens/wallpaper002.jpg') center center no-repeat fixed; 
             background-size: cover;
-            height: 97vh;
+            /*Shorthand background:
+            color > image > position > repeat > [size] > attachment
+
+            Quanto ao "size", na documentação oficial é possível fazer o shorthand, porém, ainda não funciona(10/09/2022). Por esse motivo, o size se coloca por fora.
+            */
         }
         main{
             background-color: rgb(255, 255, 255);
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
