@@ -9,6 +9,9 @@
 <body>
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
+        <!--Método GET= permite o envio de até 3000 bytes
+            Método POST= não há esse limite.
+        -->
     <p>
         <label for="isusario">Usuário:</label>
         <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="20" placeholder="Nome de usuario" autocomplete="username">
