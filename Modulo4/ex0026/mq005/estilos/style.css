@@ -47,7 +47,7 @@ menu > ul > li > a{
     background-color: rgb(97, 97, 97);
     color: white;
     text-align: center;
-    border-top: 2px solid black;
+    border-top: 2px solid rgba(148, 148, 148, 0.445);
 }
 menu > ul > li > a:hover{
     background-color: gray;
